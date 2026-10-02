@@ -3,21 +3,36 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fdf6ee;
+  --foreground: #3a2a20;
+  /* 크림색 → 연한 살구색 + 은은한 빛 번짐 (글래스 카드 뒤로 비치는 색) */
+  --page-gradient: radial-gradient(60% 45% at 85% 10%, rgba(255, 214, 186, 0.75), transparent 70%),
+    radial-gradient(55% 40% at 10% 85%, rgba(255, 228, 205, 0.8), transparent 70%),
+    linear-gradient(165deg, #fffaf3 0%, #fdeedf 50%, #fbdcc6 100%);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #1e1612;
+    --foreground: #f6ebe1;
+    --page-gradient: radial-gradient(60% 45% at 85% 10%, rgba(196, 112, 64, 0.22), transparent 70%),
+      radial-gradient(55% 40% at 10% 85%, rgba(160, 90, 55, 0.18), transparent 70%),
+      linear-gradient(165deg, #241a15 0%, #1e1612 55%, #2a1b14 100%);
   }
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 스크롤해도 그라데이션이 늘어나지 않도록 화면에 고정 (iOS는 background-attachment: fixed 미지원) */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: var(--page-gradient);
 }
 
 @layer utilities {

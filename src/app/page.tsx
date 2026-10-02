@@ -1,25 +1,24 @@
 import LinkCard from "@/components/LinkCard";
 import ProfileHeader from "@/components/ProfileHeader";
 
-// 보여 주기용 더미 데이터 (사진: 탄지로 모티프 직접 그린 SVG) — 나중에 실제 내용으로 교체
 const profile = {
-  name: "홍길동",
-  bio: "웹 개발을 좋아하는 프리랜서 개발자입니다",
-  imageUrl: "/profile-placeholder.svg",
+  name: "김길동",
+  bio: "풀스택 개발자 | 요즘에는 AI 개발에 관심이 많아요",
+  imageUrl: "https://placehold.co/160x160/orange/white/png",
 };
 
 const links = [
-  { title: "GitHub", url: "https://github.com/" },
-  { title: "LinkedIn", url: "https://www.linkedin.com/" },
-  { title: "Blog", url: "https://example.com/" },
+  { title: "GitHub", url: "https://github.com/", emoji: "💻" },
+  { title: "LinkedIn", url: "https://www.linkedin.com/", emoji: "💼" },
+  { title: "Blog", url: "https://example.com/", emoji: "✍️" },
 ];
 
 export default function Home() {
   return (
-    <main className="mx-auto flex min-h-screen w-full max-w-md flex-col items-center px-4 py-12 sm:py-16">
+    <main className="mx-auto flex min-h-dvh w-full max-w-sm flex-col items-center px-6 py-16 sm:py-24">
       <ProfileHeader {...profile} />
 
-      <ul className="mt-8 flex w-full flex-col gap-5 sm:gap-6">
+      <ul className="mt-10 flex w-full flex-col gap-4 sm:mt-12">
         {links.map((link) => (
           <li key={link.title}>
             <LinkCard {...link} />

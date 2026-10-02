@@ -12,6 +12,16 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        sans: [
+          "var(--font-pretendard)",
+          "-apple-system",
+          "BlinkMacSystemFont",
+          "Apple SD Gothic Neo",
+          "Malgun Gothic",
+          "sans-serif",
+        ],
+      },
     },
   },
   plugins: [],

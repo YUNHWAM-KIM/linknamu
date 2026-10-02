@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <!-- 초록·검정 체크무늬 하오리 -->
+    <pattern id="checker" width="24" height="24" patternUnits="userSpaceOnUse">
+      <rect width="24" height="24" fill="#16181a"/>
+      <rect width="12" height="12" fill="#1f8a5b"/>
+      <rect x="12" y="12" width="12" height="12" fill="#1f8a5b"/>
+    </pattern>
+  </defs>
+
+  <rect width="200" height="200" fill="#f4e7d3"/>
+
+  <!-- 어깨 -->
+  <path d="M18 200 C24 156 60 138 100 138 C140 138 176 156 182 200 Z" fill="url(#checker)"/>
+  <path d="M84 138 L100 172 L116 138 Z" fill="#2b2b2b"/>
+  <!-- 목 -->
+  <rect x="88" y="118" width="24" height="24" rx="6" fill="#efc7a5"/>
+
+  <!-- 얼굴 -->
+  <ellipse cx="100" cy="92" rx="40" ry="44" fill="#f8d6b8"/>
+
+  <!-- 머리카락 -->
+  <path d="M58 98 C50 70 54 46 70 34 L66 18 L84 28 L92 10 L104 26 L118 12 L122 30 L140 22 L136 40
+           C148 52 150 74 142 98 L136 80 L130 66 L122 74 L114 58 L104 70 L94 56 L86 72 L76 62 L70 80 Z"
+        fill="#4a1414"/>
+  <path d="M70 34 L66 18 L84 28 L92 10 L104 26 L118 12 L122 30 L140 22 L136 40"
+        fill="none" stroke="#9c2b23" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- 이마 흉터 -->
+  <path d="M76 74 C80 70 88 72 90 78 C86 80 82 84 78 82 Z" fill="#c4574a" opacity="0.85"/>
+
+  <!-- 눈 -->
+  <ellipse cx="84" cy="96" rx="6.5" ry="8" fill="#6e1c1c"/>
+  <ellipse cx="116" cy="96" rx="6.5" ry="8" fill="#6e1c1c"/>
+  <circle cx="86" cy="93" r="2.2" fill="#fff"/>
+  <circle cx="118" cy="93" r="2.2" fill="#fff"/>
+  <!-- 눈썹 -->
+  <path d="M76 84 L91 86" stroke="#4a1414" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M124 84 L109 86" stroke="#4a1414" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- 입 -->
+  <path d="M93 116 Q100 121 107 116" fill="none" stroke="#9a4a3a" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- 귀 -->
+  <ellipse cx="60" cy="98" rx="5" ry="8" fill="#efc7a5"/>
+  <ellipse cx="140" cy="98" rx="5" ry="8" fill="#efc7a5"/>
+
+  <!-- 화투 귀걸이 -->
+  <g>
+    <line x1="60" y1="105" x2="60" y2="110" stroke="#555" stroke-width="1.5"/>
+    <rect x="53" y="110" width="14" height="22" rx="1.5" fill="#fbfaf5" stroke="#555" stroke-width="1"/>
+    <circle cx="60" cy="118" r="4.5" fill="#d0362b"/>
+    <path d="M55 126 H65 M55 129 H65" stroke="#555" stroke-width="1"/>
+  </g>
+  <g>
+    <line x1="140" y1="105" x2="140" y2="110" stroke="#555" stroke-width="1.5"/>
+    <rect x="133" y="110" width="14" height="22" rx="1.5" fill="#fbfaf5" stroke="#555" stroke-width="1"/>
+    <circle cx="140" cy="118" r="4.5" fill="#d0362b"/>
+    <path d="M135 126 H145 M135 129 H145" stroke="#555" stroke-width="1"/>
+  </g>
+</svg>

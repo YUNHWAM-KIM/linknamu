@@ -8,7 +8,7 @@ const profile = {
 };
 
 const links = [
-  { title: "GitHub", url: "https://github.com/", emoji: "💻" },
+  { title: "GitHub", url: "https://github.com/YUNHWAM-KIM", emoji: "💻" },
   { title: "LinkedIn", url: "https://www.linkedin.com/", emoji: "💼" },
   { title: "Blog", url: "https://example.com/", emoji: "✍️" },
 ];
